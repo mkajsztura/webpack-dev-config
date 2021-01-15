@@ -1,0 +1,17 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./base";
+@import "./variables";
+@import "./typhography";
+@import "./layout";
+@import "./animation";
+@import "./components/index";
+
+body {
+  color: orange;
+}

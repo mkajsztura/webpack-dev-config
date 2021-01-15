@@ -1,0 +1,20 @@
+.page-link {
+  color: black;
+  border: none;
+  border-color: black;
+
+  box-shadow: none !important;
+
+  :focus,
+  :hover {
+    background-color: transparent;
+    color: black;
+    border: none;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
