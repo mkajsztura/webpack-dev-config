@@ -35,13 +35,8 @@ module.exports = {
         test: /\.(scss|sass)$/,
         use: [
           MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 2,
-              sourceMap: true,
-            },
-          },
+          "css-loader",
+          "resolve-url-loader",
           "sass-loader",
         ],
       },
@@ -59,7 +54,6 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: "./dist",
-    port: 9000,
+    port: 9001,
   },
 };
