@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "development",
   devtool: "inline-source-map",
+  target: "web",
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css",
@@ -55,5 +56,11 @@ module.exports = {
   },
   devServer: {
     port: 9001,
+    publicPath: "",
+    contentBase: "./src/index.html",
+    watchContentBase: true,
+    watchOptions: {
+      ignored: /node_modules/,
+    },
   },
 };
