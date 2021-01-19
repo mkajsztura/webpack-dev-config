@@ -1,0 +1,61 @@
+.brands-section {
+  .brands {
+    @extend .container;
+    margin: 60px 0;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        height: 120px;
+        width: 210px;
+        margin: 10px;
+
+        img {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.brands-gallery-section {
+  .gallery {
+    @extend .container;
+    margin: 60px 0;
+
+    @include media-breakpoint-up(md) {
+      .col {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+
+    &__column {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    img {
+      max-width: 100%;
+      @include media-breakpoint-down(md) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
